@@ -12,7 +12,7 @@ $ npm install hexo-generator-srss --save
 configure this plugin in `_config.yml`.
 
 ``` yaml
-feed:
+srss:
     type: rss2
     path: rss.xml
     limit: 20
