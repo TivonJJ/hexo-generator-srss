@@ -1,6 +1,6 @@
 {
   "name": "hexo-generator-srss",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Feed generator plugin for Hexo",
   "main": "index",
   "repository": {
