@@ -19,14 +19,14 @@ module.exports = function(locals, render, callback){
   var feedConfig = merge({
     type: 'atom',
     limit: 20
-  }, config.feed);
+  }, config.srss);
 
-  // Restrict feed type
+  // Restrict srss type
   if (feedConfig.type !== 'atom' && feedConfig.type !== 'rss2'){
     feedConfig.type = 'atom';
   }
 
-  // Set default feed path
+  // Set default srss path
   if (!feedConfig.path){
     feedConfig.path = feedConfig.type + '.xml';
   }

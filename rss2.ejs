@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<%if(config.feed && config.feed.style){%>
-<?xml-stylesheet type="text/xsl" href="<%=config.feed.style%>"?>
+<%if(config.srss && config.srss.style){%>
+<?xml-stylesheet type="text/xsl" href="<%=config.srss.style%>"?>
 <%}%>
 <rss version="2.0"
   xmlns:atom="http://www.w3.org/2005/Atom"
@@ -18,10 +18,10 @@
       <link><%- encodeURI(post.permalink) %></link>
       <guid><%- encodeURI(post.permalink) %></guid>
       <author><%=config.url%></author>
-      <%if(config.feed.dateFormat){%>
-        <pubDate><%= post.date.format(config.feed.dateFormat)%></pubDate>
+      <%if(config.srss.dateFormat){%>
+        <pubDate><%= post.date.format(config.srss.dateFormat)%></pubDate>
       <%}else{%>
-        <pubDate><%= post.date.format(config.feed.dateFormat)%></pubDate>
+        <pubDate><%= post.date.format(config.srss.dateFormat)%></pubDate>
       <%}%>
       <description>
       <% if (post.description){ %><%-: post.description | cdata %>
