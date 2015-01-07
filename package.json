@@ -1,0 +1,30 @@
+{
+  "name": "hexo-generator-srss",
+  "version": "0.1.1",
+  "description": "Feed generator plugin for Hexo",
+  "main": "index",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/TivonJJ/hexo-generator-srss.git"
+  },
+  "bugs": {
+    "url": "https://github.com/TivonJJ/hexo-generator-srss/issues"
+  },
+  "keywords": [
+    "hexo",
+    "rss",
+    "feed",
+    "rss2",
+    "generator"
+  ],
+  "author": {
+    "name": "Jee fox",
+    "email": "m@brafox.com",
+    "url": "http://brafox.com"
+  },
+  "dependencies": {
+    "ejs": "^1.0.0",
+    "utils-merge": "^1.0.0"
+  },
+  "homepage": "https://github.com/TivonJJ/hexo-generator-srss"
+}
